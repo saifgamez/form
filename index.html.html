@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#09070f">
+<title>Saif Kandil | Official</title>
+<style>
+:root{--bg:#09070f;--panel:#151020;--panel2:#1d1430;--purple:#a855f7;--lav:#d8b4fe;--white:#faf7ff;--muted:#b7a9c9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--white);min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 15% 10%,#6d28d922,transparent 36%),radial-gradient(ellipse at 90% 70%,#9333ea1c,transparent 35%);z-index:-2}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.5;background-image:radial-gradient(#d8b4fe 1px,transparent 1px),radial-gradient(#fff 1px,transparent 1px);background-size:83px 83px,137px 137px;background-position:0 0,31px 47px}
+nav{max-width:1100px;margin:auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:15px}
+.logo{font-weight:900;letter-spacing:1.4px;font-size:1.15rem}.logo span{color:var(--lav)}
+.navtag{font-size:.8rem;color:var(--muted);border:1px solid #a855f744;padding:8px 13px;border-radius:999px}
+main{max-width:1100px;margin:auto;padding:32px 24px 60px}
+.hero{display:grid;grid-template-columns:1fr .85fr;gap:50px;align-items:center;min-height:480px}
+.eyebrow{color:var(--lav);letter-spacing:3px;text-transform:uppercase;font-size:.76rem;font-weight:800}
+h1{font-size:clamp(3rem,7vw,5.8rem);line-height:.98;letter-spacing:-3px;margin:18px 0}
+h1 span{color:var(--lav);text-shadow:0 0 32px #a855f755}
+.intro{max-width:490px;color:var(--muted);font-size:1.05rem;line-height:1.8}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;color:white;border:1px solid #a855f766;background:#a855f71a;padding:12px 17px;border-radius:13px;font-weight:700;transition:.2s}
+.btn.primary{background:linear-gradient(135deg,#9333ea,#6d28d9);border-color:transparent;box-shadow:0 8px 30px #7e22ce44}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px #a855f744}
+.photo-wrap{justify-self:center;position:relative;width:min(100%,350px);aspect-ratio:4/5}
+.photo-wrap:before{content:"";position:absolute;inset:-12px;border-radius:32px;border:1px solid #c084fc77;transform:rotate(4deg);box-shadow:0 0 50px #9333ea22}
+.photo{width:100%;height:100%;object-fit:cover;object-position:center 30%;border-radius:26px;border:1px solid #ffffff22;filter:grayscale(100%);position:relative;box-shadow:0 20px 70px #0009}
+.float-rocket{position:absolute;right:-25px;top:22px;font-size:2rem;animation:float 3s ease-in-out infinite;filter:drop-shadow(0 0 12px #c084fc)}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-10deg)}50%{transform:translateY(-13px) rotate(5deg)}}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:35px 0 20px}
+h2{font-size:1.7rem}.section-head p{color:var(--muted);font-size:.9rem}
+.social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.social-card{display:flex;align-items:center;gap:14px;padding:18px;background:linear-gradient(145deg,#1b1427,#100d18);border:1px solid #a855f72a;border-radius:18px;text-decoration:none;color:var(--white);transition:.22s;min-height:90px}
+.social-card:hover{transform:translateY(-4px);border-color:#c084fcaa;background:#211431;box-shadow:0 12px 35px #7e22ce20}
+.social-icon{display:grid;place-items:center;width:45px;height:45px;border-radius:14px;background:#a855f71a;color:var(--lav);font-weight:900;font-size:1.1rem;flex-shrink:0}
+.social-card strong{display:block;font-size:1rem}.social-card small{display:block;color:var(--muted);margin-top:5px;font-size:.78rem}
+.website-card{margin-top:16px;padding:23px;border-radius:20px;background:linear-gradient(120deg,#23143a,#120d1d);border:1px solid #a855f744;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.website-card p{color:var(--muted);margin-top:6px;line-height:1.6}
+footer{max-width:1100px;margin:auto;padding:20px 24px 35px;color:#857594;font-size:.8rem;display:flex;justify-content:space-between;gap:15px;border-top:1px solid #ffffff10}
+@media(max-width:760px){nav{padding:18px}main{padding:20px 18px 45px}.hero{grid-template-columns:1fr;gap:35px;padding-top:25px}.hero-copy{order:2}.photo-wrap{order:1;width:min(78%,300px)}h1{letter-spacing:-2px}.social-grid{grid-template-columns:repeat(2,1fr)}.website-card{align-items:flex-start;flex-direction:column}.section-head{align-items:flex-start;flex-direction:column}}
+@media(max-width:420px){.social-grid{grid-template-columns:1fr}.navtag{font-size:.7rem}.social-card{min-height:75px}}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<nav><div class="logo">SAIF <span>KANDIL</span></div><div class="navtag">PERSONAL SPACE · 2026</div></nav>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Welcome to my world</div>
+    <h1>Saif<br><span>Kandil.</span></h1>
+    <p class="intro">My links, my gaming world, and everything in one place. Find me across social media.</p>
+    <div class="actions">
+      <a class="btn primary" href="#socials">✦ Explore my links</a>
+      <a class="btn" href="https://saifgamez.github.io/games/" target="_blank" rel="noopener">🚀 Space Game</a>
+    </div>
+  </div>
+  <div class="photo-wrap"><img class="photo" src="profile.jpg" alt="Saif Kandil profile photo"><div class="float-rocket" aria-hidden="true">🚀</div></div>
+</section>
+<section id="socials">
+  <div class="section-head"><div><div class="eyebrow">Find me online</div><h2>Social <span style="color:var(--lav)">media.</span></h2></div><p>One click takes you to my profile.</p></div>
+  <div class="social-grid">
+    <a class="social-card" href="https://www.facebook.com/share/1HrMcnQABv/" target="_blank" rel="noopener"><span class="social-icon">f</span><span><strong>Facebook</strong><small>Visit my profile ↗</small></span></a>
+    <a class="social-card" href="https://www.instagram.com/isaifffff/" target="_blank" rel="noopener"><span class="social-icon">◎</span><span><strong>Instagram</strong><small>@isaifffff ↗</small></span></a>
+    <a class="social-card" href="https://www.tiktok.com/@isaifffff" target="_blank" rel="noopener"><span class="social-icon">♪</span><span><strong>TikTok</strong><small>@isaifffff ↗</small></span></a>
+    <a class="social-card" href="https://www.snapchat.com/add/saiff_yahia" target="_blank" rel="noopener"><span class="social-icon">👻</span><span><strong>Snapchat</strong><small>@saiff_yahia ↗</small></span></a>
+    <a class="social-card" href="https://wa.me/201227290891" target="_blank" rel="noopener"><span class="social-icon">☏</span><span><strong>WhatsApp</strong><small>Message me ↗</small></span></a>
+    <a class="social-card" href="https://saifgamez.github.io/games/" target="_blank" rel="noopener"><span class="social-icon">🎮</span><span><strong>Space Game</strong><small>My gaming website ↗</small></span></a>
+  </div>
+  <a class="website-card" href="https://saifgamez.github.io/games/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">
+    <div><div class="eyebrow">My project</div><h2>🚀 Space Game</h2><p>Explore my gaming website — a separate project from this personal page.</p></div>
+    <span class="btn primary">Visit website ↗</span>
+  </a>
+</section>
+</main>
+<footer><span>© 2026 Saif Kandil</span><span>Built with 💜 and a little rocket fuel.</span></footer>
+</body>
+</html>
